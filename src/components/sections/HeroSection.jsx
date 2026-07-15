@@ -32,7 +32,7 @@ function HeroSection() {
             01
           </span>
           <div className="hero__portrait">
-            <img src="/images/profile/foto-profil.png" alt="Foto profil Nuraidi" fetchPriority="high" />
+            <img src="/images/profile/foto-profil.webp" alt="Foto profil Nuraidi" fetchPriority="high" />
           </div>
           <span className="hero__dimension" aria-hidden="true" />
           <span className="hero__crosshair" aria-hidden="true" />

@@ -27,7 +27,7 @@ export const projects = [
     slug: 'aplikasi-perisai',
     name: 'Aplikasi PERISAI',
     category: 'Proyek Digital',
-    image: '/images/projects/perisai.jpeg',
+    image: '/images/projects/perisai.webp',
     alt: 'Tampilan aplikasi PERISAI',
     description:
       'Aplikasi berbasis web untuk mendukung pengelolaan data dan administrasi internal.',
@@ -41,7 +41,7 @@ export const projects = [
     slug: 'sipras-sistem-pengelolaan-rutan-sambas',
     name: 'SiPRAS — Sistem Pengelolaan Rutan Sambas',
     category: 'Pengembangan Platform Sistem Informasi',
-    image: '/images/projects/sipras.png',
+    image: '/images/projects/sipras.webp',
     alt: 'Tampilan platform SiPRAS Sistem Pengelolaan Rutan Sambas',
     description:
       'Platform web terintegrasi yang menghubungkan layanan keuangan, kepegawaian, pengelolaan BMN, dan administrasi tata usaha di Rutan Kelas IIB Sambas.',
@@ -73,7 +73,7 @@ export const projects = [
     slug: 'desain-dan-dokumentasi-digital',
     name: 'Desain dan Dokumentasi Digital',
     category: 'Desain',
-    image: '/images/projects/hari-pendidikan-nasional.jpeg',
+    image: '/images/projects/hari-pendidikan-nasional.webp',
     alt: 'Desain publikasi Hari Pendidikan Nasional',
     description:
       'Kumpulan desain publikasi, logo, dokumentasi kegiatan, dan materi visual untuk kebutuhan organisasi.',

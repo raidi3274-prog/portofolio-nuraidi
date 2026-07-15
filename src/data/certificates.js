@@ -6,7 +6,7 @@ export const certificates = [
     period: '29 Juli 2024–14 Desember 2024',
     year: '2024',
     status: 'Lulus (Predikat Baik)',
-    image: '/images/certificates/sertifikat-magang-pt-mas.png',
+    image: '/images/certificates/sertifikat-magang-pt-mas.webp',
     alt: 'Sertifikat Magang PT Mitra Andalan Sejahtera Nuraidi',
   },
   {
@@ -16,7 +16,7 @@ export const certificates = [
     period: '24 November 2025–24 Maret 2026',
     year: '2026',
     status: 'Selesai',
-    image: '/images/certificates/sertifikat-maganghub.png',
+    image: '/images/certificates/sertifikat-maganghub.webp',
     alt: 'Sertifikat MagangHub Kementerian Ketenagakerjaan Nuraidi',
   },
   {
@@ -26,7 +26,7 @@ export const certificates = [
     period: '24 Maret 2026',
     year: '2026',
     status: 'Penerima Penghargaan Peserta Magang Terinovatif',
-    image: '/images/certificates/penghargaan-terinovatif.jpeg',
+    image: '/images/certificates/penghargaan-terinovatif.webp',
     alt: 'Penghargaan Peserta Magang Terinovatif Nuraidi',
   },
   {
@@ -37,7 +37,7 @@ export const certificates = [
     period: '29 Oktober 2025–19 November 2025',
     year: '2025',
     status: 'Lulus',
-    image: '/images/certificates/sertifikat-plantation-worker.jpg',
+    image: '/images/certificates/sertifikat-plantation-worker.webp',
     alt: 'Sertifikat Pelatihan Plantation Worker Nuraidi',
   },
 ];

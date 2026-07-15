@@ -6,7 +6,7 @@ const profileFacts = [
   ['Institusi', 'Politeknik Negeri Sambas'],
   ['IPK', '3,62'],
   ['Domisili', 'Sambas, Kalimantan Barat'],
-  ['Fokus', 'Maintenance  Operasional Mesin  Administrasi Teknis'],
+  ['Fokus', ['Maintenance', 'Operasional Mesin', 'Administrasi Teknis']],
   ['Status', 'Terbuka untuk peluang kerja'],
 ];
 
@@ -36,7 +36,17 @@ function AboutSection() {
                   {String(index + 1).padStart(2, '0')}
                 </span>
                 <dt>{term}</dt>
-                <dd>{detail}</dd>
+                <dd>
+                  {Array.isArray(detail) ? (
+                    <ul className="about__focus-list">
+                      {detail.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    detail
+                  )}
+                </dd>
               </div>
             ))}
           </dl>

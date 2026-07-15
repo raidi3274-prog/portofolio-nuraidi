@@ -48,6 +48,30 @@
   color: var(--color-text-muted);
 }
 
+.about__focus-list {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about__focus-list li {
+  position: relative;
+  padding-left: 17px;
+}
+
+.about__focus-list li::before {
+  position: absolute;
+  top: 0.55em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #66bce3;
+  content: '';
+  transform: translateY(-50%);
+}
+
 @media (max-width: 780px) {
   .about__grid {
     grid-template-columns: 1fr;
