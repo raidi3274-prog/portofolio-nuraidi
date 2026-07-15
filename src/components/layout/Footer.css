@@ -1,0 +1,33 @@
+.footer {
+  border-top: 1px solid var(--color-border);
+  padding: 24px 0;
+  background: rgb(9 16 20 / 70%);
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer p {
+  margin: 0 0 4px;
+}
+
+.footer a {
+  color: var(--color-text-muted);
+}
+
+.footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+@media (max-width: 720px) {
+  .footer__inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,20 @@
+:root {
+  --color-bg: #121619;
+  --color-bg-secondary: #1b2227;
+  --color-card: #242d33;
+  --color-text: #f2f0e9;
+  --color-text-muted: #a9b1b7;
+  --color-accent: #2f6f8f;
+  --color-warning: #d9772d;
+  --color-border: #344149;
+  --color-line-soft: rgb(169 177 183 / 7%);
+  --color-panel: rgb(27 34 39 / 88%);
+
+  --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+
+  --container: 1240px;
+  --radius: 8px;
+  --shadow-soft: 0 24px 70px rgb(0 0 0 / 38%);
+  --transition: 180ms ease;
+}

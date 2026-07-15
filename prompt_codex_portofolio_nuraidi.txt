@@ -1,0 +1,587 @@
+Buat sebuah website personal portfolio bernama “Portofolio Nuraidi” menggunakan React.js, Vite, JavaScript, JSX/HTML, dan CSS. Website harus menggunakan bahasa Indonesia, responsif, cepat, mudah dipelihara, serta siap disimpan di GitHub dan di-deploy ke Vercel.
+
+KONTEKS PROFIL
+
+Nuraidi adalah lulusan D4 Teknik Mesin Pertanian dari Politeknik Negeri Sambas dengan IPK 3,62. Identitas profesional utamanya adalah bidang teknik mesin, perawatan mesin industri, sistem kelistrikan dasar, dan pekerjaan administrasi.
+
+Nuraidi bukan programmer profesional. Pengembangan website dan aplikasi merupakan hobi, minat pribadi, serta kemampuan digital pendukung. Jangan menampilkan Nuraidi sebagai Full-Stack Developer, Front-End Developer, Software Engineer, atau programmer penuh.
+
+Posisi utama yang digunakan:
+
+“Lulusan D4 Teknik Mesin Pertanian”
+
+Deskripsi singkat:
+
+“Saya memiliki pengalaman di bidang perawatan mesin industri, sistem kelistrikan dasar, pekerjaan administrasi, serta pengembangan solusi digital sederhana sebagai minat dan kemampuan pendukung.”
+
+TUJUAN WEBSITE
+
+Website berfungsi untuk:
+
+1. Memperkenalkan profil profesional Nuraidi.
+2. Menampilkan pengalaman industri dan administrasi.
+3. Menampilkan proyek teknik dan proyek digital.
+4. Menampilkan keahlian, sertifikat, dan penghargaan.
+5. Menyediakan CV yang dapat diunduh.
+6. Memudahkan rekruter atau perusahaan menghubungi Nuraidi.
+
+TARGET PENGUNJUNG
+
+Target utamanya adalah HR, rekruter, perusahaan industri, perusahaan perkebunan kelapa sawit, instansi pemerintah, serta calon pemberi kerja di bidang teknik, maintenance, administrasi, dan operasional.
+
+KONSEP DESAIN
+
+Gunakan konsep “Industrial Editorial Portfolio”.
+
+Karakter desain:
+
+- Profesional
+- Industrial
+- Modern
+- Bersih
+- Tenang
+- Personal
+- Tidak terlihat seperti template portofolio programmer
+- Tidak terlihat seperti website generik hasil AI
+- Tidak terlalu ramai
+- Tidak memakai efek neon berlebihan
+
+PALET WARNA
+
+Gunakan variabel CSS terpusat:
+
+- Latar utama: #121619
+- Latar sekunder: #1B2227
+- Warna kartu: #242D33
+- Teks utama: #F2F0E9
+- Teks sekunder: #A9B1B7
+- Aksen utama steel blue: #2F6F8F
+- Aksen penegas safety orange: #D9772D
+- Border: #344149
+
+Proporsi penggunaan:
+
+- 70% charcoal dan gunmetal
+- 20% putih hangat dan abu-abu
+- 8% steel blue
+- 2% safety orange
+
+Safety orange hanya digunakan sebagai penegas, misalnya indikator status, garis kecil, angka, menu aktif, atau hover tombol. Jangan menggunakannya secara berlebihan.
+
+Gunakan satu tema gelap (dark) secara tetap. Jangan menambahkan toggle light/dark mode atau sistem tema ganda.
+
+TIPOGRAFI
+
+Gunakan:
+
+- Bricolage Grotesque untuk judul
+- IBM Plex Sans untuk isi, menu, tombol, dan formulir
+
+Gunakan Fontsource melalui npm agar font mudah dikelola dan tidak bergantung pada pemuatan eksternal.
+
+Hindari Inter, Poppins, Montserrat, dan Space Grotesk sebagai font utama.
+
+Gunakan ketebalan:
+
+- Judul utama: 700
+- Judul bagian: 600–700
+- Judul kartu: 600
+- Isi: 400
+- Menu dan tombol: 500–600
+
+ARSITEKTUR WEBSITE
+
+Gunakan model single-page portfolio dengan navigasi menuju setiap section.
+
+Menu utama:
+
+- Beranda
+- Tentang
+- Pengalaman
+- Proyek
+- Keahlian
+- Sertifikat
+- Kontak
+
+Navbar harus sticky, memiliki indikator menu aktif, dan berubah menjadi menu hamburger pada perangkat seluler.
+
+Detail proyek dapat menggunakan halaman terpisah dengan React Router atau tampilan detail yang terstruktur. Gunakan React Router jika implementasinya tetap sederhana dan mudah dipelihara.
+
+STRUKTUR KONTEN
+
+1. BERANDA
+
+Tampilkan:
+
+- Teks kecil: “Halo, saya”
+- Nama besar: “Nuraidi”
+- Posisi: “Lulusan D4 Teknik Mesin Pertanian”
+- Deskripsi singkat
+- Lokasi: Sambas, Kalimantan Barat
+- Status: Terbuka untuk peluang kerja
+
+Tombol:
+
+- Lihat Proyek
+- Unduh CV
+- Hubungi Saya
+
+Gunakan layout dua kolom pada desktop dan satu kolom pada perangkat seluler.
+
+Pada sisi kanan gunakan placeholder foto profesional dengan bingkai industrial editorial. Tambahkan garis geometris tipis atau elemen seperti gambar teknik, tetapi jangan terlalu ramai.
+
+Jangan tampilkan ikon React, JavaScript, HTML, terminal, kode berjalan, atau animasi mengetik pada Hero Section.
+
+2. TENTANG SAYA
+
+Gunakan deskripsi:
+
+“Saya merupakan lulusan D4 Teknik Mesin Pertanian dari Politeknik Negeri Sambas. Saya memiliki pengalaman dalam membantu perawatan dan perbaikan mesin industri, pemeriksaan komponen mekanik, sistem kelistrikan dasar, pekerjaan administrasi, dokumentasi, serta pengelolaan data.
+
+Di luar bidang utama teknik, saya juga memiliki minat dalam teknologi dan pengembangan solusi digital sederhana. Minat tersebut saya gunakan untuk mempelajari pembuatan aplikasi berbasis web yang dapat membantu pekerjaan administrasi dan pengelolaan informasi.”
+
+Informasi ringkas:
+
+- Pendidikan: D4 Teknik Mesin Pertanian
+- Institusi: Politeknik Negeri Sambas
+- IPK: 3,62
+- Domisili: Sambas, Kalimantan Barat
+- Minat: Maintenance, teknologi, dan digitalisasi
+- Status: Terbuka untuk peluang kerja
+
+3. PENGALAMAN
+
+Gunakan timeline vertikal.
+
+Pengalaman pertama:
+
+Nama perusahaan:
+PT Mitra Andalan Sejahtera
+
+Posisi:
+Magang Perawatan Mesin Industri
+
+Deskripsi:
+Membantu kegiatan perawatan dan perbaikan mesin pada pabrik kelapa sawit, pemeriksaan komponen mekanik, serta pekerjaan pendukung pada sistem kelistrikan industri.
+
+Kontribusi:
+
+- Membantu pemeriksaan dan perawatan mesin press dan bunch press.
+- Membantu penggantian bearing, screw, press cage, seal, dan komponen gearbox.
+- Membantu pekerjaan sensor proximity, kontaktor, panel, pneumatik, dan hidrolik.
+- Mendukung dokumentasi komponen, pengelolaan peralatan, dan penerapan K3.
+
+Pengalaman kedua:
+
+Nama instansi:
+Rumah Tahanan Negara Kelas IIB Sambas
+
+Posisi:
+Magang Administrasi dan Dukungan Digital
+
+Deskripsi:
+Membantu pekerjaan administrasi, dokumentasi, pengarsipan, publikasi, dan pengembangan solusi digital sederhana untuk mendukung pekerjaan internal.
+
+Kontribusi:
+
+- Membantu pengelolaan surat dan dokumen melalui aplikasi Srikandi.
+- Membantu penyusunan modul layanan rehabilitasi narkotika bagi WBP.
+- Membantu dokumentasi, pengarsipan, pengelolaan data, dan publikasi kegiatan.
+- Mengembangkan aplikasi pendukung internal sebagai proyek digital.
+
+Jangan menggunakan kalimat yang memberi kesan Nuraidi memiliki tanggung jawab penuh sebagai pegawai tetap.
+
+4. PROYEK
+
+Kelompokkan proyek menjadi:
+
+- Proyek Teknik
+- Proyek Digital
+- Dokumentasi dan Desain
+
+Proyek utama pertama:
+
+Nama:
+Sistem Penyiraman Tanaman Otomatis
+
+Kategori:
+Proyek Teknik / Tugas Akhir
+
+Deskripsi:
+Sistem penyiraman tanaman berbasis Arduino Uno yang dapat bekerja menggunakan sensor kelembapan tanah dan jadwal RTC.
+
+Teknologi dan komponen:
+
+- Arduino Uno
+- Capacitive Soil Moisture Sensor
+- RTC DS1307
+- Relay
+- Pompa air
+- LCD
+- Keypad
+
+Hasil utama:
+
+- Dua mode penyiraman: sensor dan jadwal.
+- Target kelembapan tanah 60–80%.
+- Akurasi mode sensor 98,12%.
+- Sistem diuji pada tanaman cabai rawit.
+
+Proyek kedua:
+
+Nama:
+Aplikasi PERISAI (Perimeter Intelligent Sensor and Alert Installation)
+
+Kategori:
+Proyek Digital
+
+Deskripsi:
+Aplikasi berbasis web yang dikembangkan untuk membantu pengelolaan data dan pekerjaan administrasi internal. Proyek ini merupakan pengembangan lanjutan dari konsep awal bernama SIGAP, yang kemudian di-rebranding dan diperluas menjadi PERISAI dengan tambahan modul Patroli, Perimeter/Alarm, Laporan Harian, Laporan Kejadian, Jadwal Piket, dan Dokumentasi.
+
+Teknologi:
+
+- Google Apps Script
+- HTML
+- CSS
+- JavaScript
+- Google Spreadsheet
+
+Pada halaman detail proyek, tampilkan juga perjalanan singkat dari versi awal (SIGAP) menuju versi PERISAI saat ini untuk menunjukkan proses iterasi dan pengembangan berkelanjutan.
+
+Proyek ketiga:
+
+Nama:
+Modul Layanan Rehabilitasi Narkotika WBP
+
+Kategori:
+Dokumentasi dan Administrasi
+
+Deskripsi:
+Penyusunan modul panduan layanan rehabilitasi narkotika bagi warga binaan berdasarkan data, referensi, dan kebutuhan pelaksanaan kegiatan.
+
+Proyek keempat:
+
+Nama:
+Desain dan Dokumentasi Digital
+
+Kategori:
+Desain
+
+Deskripsi:
+Kumpulan desain publikasi, logo, dokumentasi kegiatan, dan materi visual yang dibuat untuk kebutuhan organisasi.
+
+Setiap kartu proyek harus memiliki:
+
+- Gambar placeholder
+- Kategori
+- Nama proyek
+- Deskripsi singkat
+- Teknologi atau alat
+- Tombol “Lihat Detail”
+
+Detail proyek harus menampilkan:
+
+- Latar belakang
+- Tujuan
+- Kontribusi saya
+- Proses
+- Teknologi atau alat
+- Hasil
+- Dokumentasi
+
+5. KEAHLIAN
+
+Jangan menggunakan progress bar atau persentase kemampuan.
+
+Gunakan tiga kategori:
+
+Keahlian Teknik:
+
+- Perawatan mesin industri
+- Pemeriksaan komponen mekanik
+- Dasar sistem kelistrikan
+- Pengelasan
+- Pemecahan masalah teknis
+- Penerapan K3
+
+Perangkat Lunak:
+
+- AutoCAD
+- Autodesk Inventor
+- Microsoft Word
+- Microsoft Excel
+- Microsoft PowerPoint
+- Canva
+
+Keahlian Digital Pendukung:
+
+- Google Apps Script
+- HTML
+- CSS
+- JavaScript
+- React.js
+- GitHub
+
+Keahlian digital harus ditempatkan setelah keahlian teknik dan perangkat lunak.
+
+6. SERTIFIKAT DAN PENGHARGAAN
+
+Gunakan data placeholder yang mudah diperbarui:
+
+- Sertifikat Magang PT Mitra Andalan Sejahtera
+- Sertifikat MagangHub Kementerian Ketenagakerjaan
+- Penghargaan Peserta Magang Terinovatif
+- Sertifikat atau pelatihan lain
+
+Setiap sertifikat memiliki:
+
+- Gambar
+- Nama
+- Penerbit
+- Tahun
+- Tombol “Lihat Sertifikat”
+
+Tombol “Lihat Sertifikat” membuka gambar dalam modal/lightbox di halaman yang sama, bukan tab baru.
+
+7. KONTAK
+
+Gunakan informasi:
+
+- Email: nuraidi650@gmail.com
+- Nomor WhatsApp: 085347598630
+- LinkedIn: www.linkedin.com/in/nuraidi
+- Lokasi: Sambas, Kalimantan Barat
+
+Tambahkan formulir:
+
+- Nama
+- Email
+- Subjek
+- Pesan
+- Tombol Kirim Pesan
+
+Pada tahap pertama, formulir boleh menggunakan tautan mailto atau simulasi pengiriman lokal. Pisahkan logika formulir agar nantinya mudah dihubungkan ke Formspree, EmailJS, atau layanan lain. Siapkan file .env.example untuk menyimpan kunci API layanan formulir di masa depan, dan pastikan file .env asli masuk ke .gitignore agar tidak ikut ter-push ke GitHub.
+
+8. FOOTER
+
+Gunakan teks:
+
+“© 2026 Nuraidi. Seluruh hak cipta dilindungi.”
+
+Tambahkan teks kecil:
+
+“Dibangun dengan React.js sebagai proyek pribadi.”
+
+Tambahkan tautan:
+
+- LinkedIn
+- GitHub
+- Email
+- Kembali ke atas
+
+ASET DAN PLACEHOLDER
+
+Gunakan placeholder lokal berupa kotak warna solid dengan teks label (misalnya “Foto Profil”, “Gambar Proyek”, “Sertifikat”), tanpa memanggil layanan gambar eksternal apa pun (seperti placehold.co atau Unsplash), agar build production tidak bergantung pada koneksi ke domain luar.
+
+Gunakan ukuran dan rasio berikut agar layout konsisten saat placeholder diganti nanti:
+
+- Foto profil (Beranda): potret, 800×1000px.
+- Gambar kartu proyek: rasio 16:9, minimal 1200×675px.
+- Gambar sertifikat: rasio 4:3, minimal 800×600px.
+
+Letakkan file CV di src/assets/documents/CV_Nuraidi.pdf sebagai placeholder yang mudah diganti nantinya.
+
+FITUR WAJIB
+
+- Responsive design
+- Sticky navbar
+- Active navigation indicator
+- Smooth scrolling
+- Tombol unduh CV (file diletakkan di src/assets/documents/, tombol mengunduh langsung, bukan membuka tab baru)
+- Tombol WhatsApp (gunakan tautan wa.me dengan pesan pembuka yang sudah terisi otomatis)
+- Tautan LinkedIn
+- Tautan GitHub
+- Formulir kontak
+- Animasi scroll ringan
+- Tombol kembali ke atas
+- SEO metadata
+- Open Graph metadata
+- Favicon placeholder
+- Sitemap
+- robots.txt
+- Halaman 404 sederhana
+- Dukungan prefers-reduced-motion
+- Lazy loading gambar
+- Alt text untuk seluruh gambar
+- Focus state yang terlihat
+- Navigasi keyboard yang baik
+- Target standar aksesibilitas WCAG level AA sebagai acuan kontras warna dan navigasi
+
+ANIMASI
+
+Gunakan animasi ringan dan fungsional:
+
+- Fade in
+- Slide pendek
+- Hover halus
+- Perubahan border
+- Sedikit pergerakan gambar
+
+Jangan gunakan:
+
+- Animasi mengetik
+- Efek partikel berlebihan
+- Kursor khusus
+- Objek yang mengikuti mouse
+- Video latar
+- Loading screen panjang
+- Bayangan neon
+- Animasi 3D
+- Efek parallax berat
+- Glassmorphism pada semua kartu
+
+Gunakan Framer Motion hanya jika diperlukan. Jangan menambahkan library jika animasi dapat dibuat dengan CSS biasa.
+
+ATURAN MAINTENANCE
+
+Website wajib mudah diperbarui.
+
+Gunakan struktur seperti berikut:
+
+src/
+├── assets/
+│   ├── documents/
+│   ├── icons/
+│   └── images/
+├── components/
+│   ├── common/
+│   ├── layout/
+│   └── sections/
+├── config/
+│   └── siteConfig.js
+├── data/
+│   ├── certificates.js
+│   ├── experiences.js
+│   ├── navigation.js
+│   ├── projects.js
+│   ├── skills.js
+│   └── socialLinks.js
+├── hooks/
+├── pages/
+├── styles/
+│   ├── globals.css
+│   ├── variables.css
+│   └── utilities.css
+├── App.jsx
+└── main.jsx
+
+Aturan wajib:
+
+1. Jangan menulis konten panjang langsung di komponen.
+2. Simpan pengalaman, proyek, keahlian, sertifikat, navigasi, dan media sosial pada file data terpisah.
+3. Simpan identitas website, email, nomor WhatsApp, lokasi, dan tautan CV dalam siteConfig.js.
+4. Gunakan komponen kartu yang dapat digunakan kembali.
+5. Hindari kode duplikat.
+6. Hindari struktur folder yang terlalu kompleks.
+7. Jangan memakai state management global jika tidak dibutuhkan.
+8. Jangan memakai backend jika tidak diperlukan.
+9. Jangan memakai database untuk konten portofolio statis.
+10. Jangan menggunakan dependency yang berlebihan.
+11. Tambahkan komentar hanya untuk bagian yang benar-benar membutuhkan penjelasan.
+12. Gunakan nama variabel, komponen, dan file yang jelas.
+13. Buat README.md lengkap.
+
+README harus menjelaskan:
+
+- Cara instalasi
+- Cara menjalankan proyek
+- Cara build
+- Cara mengganti identitas profil
+- Cara menambah pengalaman
+- Cara menambah proyek
+- Cara menambah keahlian
+- Cara menambah sertifikat
+- Cara mengganti foto
+- Cara mengganti CV
+- Cara mengganti warna
+- Cara menghubungkan formulir kontak
+- Cara push ke GitHub
+- Cara deploy ke Vercel
+
+PERFORMA
+
+- Hindari gambar berukuran besar.
+- Gunakan WebP atau AVIF jika memungkinkan.
+- Lazy load gambar yang tidak langsung terlihat.
+- Hindari JavaScript yang tidak diperlukan.
+- Gunakan code splitting jika memakai halaman detail proyek.
+- Pastikan tidak ada error pada console.
+- Pastikan build production berhasil.
+- Optimalkan Core Web Vitals.
+- Gunakan semantic HTML.
+- (Opsional) Sediakan tempat integrasi Vercel Analytics atau Plausible untuk memantau jumlah pengunjung, tanpa mengaktifkannya secara default.
+
+RESPONSIVE DESIGN
+
+Uji desain untuk:
+
+- 360px
+- 390px
+- 768px
+- 1024px
+- 1440px
+
+Pastikan:
+
+- Tidak ada horizontal overflow.
+- Navbar seluler mudah digunakan.
+- Tombol memiliki area sentuh yang cukup.
+- Teks tidak terlalu kecil.
+- Kartu proyek tetap nyaman dibaca.
+- Formulir kontak tetap rapi.
+- Foto tidak terpotong secara buruk.
+
+SEO
+
+Gunakan:
+
+Judul:
+“Nuraidi | Portofolio Teknik Mesin”
+
+Deskripsi:
+“Portofolio Nuraidi, lulusan D4 Teknik Mesin Pertanian dengan pengalaman di bidang perawatan mesin industri, sistem kelistrikan dasar, administrasi, dan pengembangan solusi digital sederhana.”
+
+Gunakan metadata Open Graph dan Twitter Card.
+
+Gunakan atribut lang="id" pada elemen <html> root agar mesin pencari dan pembaca layar mengenali bahasa konten dengan benar.
+
+ATURAN KODE
+
+- Gunakan React functional components.
+- Gunakan ES Modules.
+- Cantumkan versi Node yang digunakan melalui file .nvmrc atau field "engines" di package.json.
+- Gunakan ESLint.
+- Gunakan Prettier.
+- Gunakan semantic HTML.
+- Gunakan CSS variables.
+- Jangan menggunakan TypeScript.
+- Jangan menggunakan Tailwind CSS.
+- Gunakan CSS modular atau file CSS yang terstruktur.
+- Pastikan npm run lint berhasil.
+- Pastikan npm run build berhasil.
+- Jangan meninggalkan file contoh bawaan Vite.
+- Jangan menggunakan lorem ipsum.
+- Gunakan placeholder yang jelas untuk aset yang belum tersedia.
+
+OUTPUT YANG DIHARAPKAN
+
+1. Website lengkap dan dapat dijalankan.
+2. Struktur kode modular.
+3. Data konten terpisah dari komponen.
+4. README maintenance lengkap.
+5. Desain responsif.
+6. Tidak ada error console.
+7. Build production berhasil.
+8. Siap di-push ke GitHub.
+9. Siap di-deploy ke Vercel.
+10. Sertakan ringkasan file yang dibuat dan cara mengganti placeholder.

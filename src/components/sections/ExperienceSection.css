@@ -1,0 +1,46 @@
+.experience__timeline {
+  display: grid;
+  gap: 20px;
+  border-left: 2px solid var(--color-border);
+  padding-left: 22px;
+}
+
+.experience__item {
+  position: relative;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  padding: 18px;
+  background: var(--color-panel);
+}
+
+.experience__item::before {
+  position: absolute;
+  top: 24px;
+  left: -30px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid var(--color-bg);
+  border-radius: 50%;
+  background: var(--color-warning);
+  content: '';
+}
+
+.experience__company {
+  margin: 0 0 4px;
+  color: #66bce3;
+  font-weight: 600;
+}
+
+.experience__item h3 {
+  margin: 0 0 10px;
+}
+
+.experience__item p,
+.experience__item li {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+}
+
+.experience__item ul {
+  margin-bottom: 0;
+}

@@ -1,0 +1,43 @@
+export const certificates = [
+  {
+    name: 'Sertifikat Magang PT Mitra Andalan Sejahtera',
+    issuer: 'PT Mitra Andalan Sejahtera',
+    program: 'Magang Industri di Pabrik Kelapa Sawit',
+    period: '29 Juli 2024–14 Desember 2024',
+    year: '2024',
+    status: 'Lulus (Predikat Baik)',
+    image: '/images/certificates/sertifikat-magang-pt-mas.png',
+    alt: 'Sertifikat Magang PT Mitra Andalan Sejahtera Nuraidi',
+  },
+  {
+    name: 'Sertifikat MagangHub Kementerian Ketenagakerjaan',
+    issuer: 'Kementerian Ketenagakerjaan Republik Indonesia',
+    program: 'MagangHub – Rumah Tahanan Negara Kelas IIB Sambas',
+    period: '24 November 2025–24 Maret 2026',
+    year: '2026',
+    status: 'Selesai',
+    image: '/images/certificates/sertifikat-maganghub.png',
+    alt: 'Sertifikat MagangHub Kementerian Ketenagakerjaan Nuraidi',
+  },
+  {
+    name: 'Penghargaan Peserta Magang Terinovatif',
+    issuer: 'Rumah Tahanan Negara Kelas IIB Sambas',
+    program: 'Program MagangHub Kementerian Ketenagakerjaan',
+    period: '24 Maret 2026',
+    year: '2026',
+    status: 'Penerima Penghargaan Peserta Magang Terinovatif',
+    image: '/images/certificates/penghargaan-terinovatif.jpeg',
+    alt: 'Penghargaan Peserta Magang Terinovatif Nuraidi',
+  },
+  {
+    name: 'Sertifikat Pelatihan Plantation Worker',
+    issuer: 'Dinas Tenaga Kerja dan Transmigrasi Kabupaten Sambas',
+    program:
+      'Program Peningkatan Kapasitas Calon Pekerja Migran Indonesia / Pekerja Migran Indonesia',
+    period: '29 Oktober 2025–19 November 2025',
+    year: '2025',
+    status: 'Lulus',
+    image: '/images/certificates/sertifikat-plantation-worker.jpg',
+    alt: 'Sertifikat Pelatihan Plantation Worker Nuraidi',
+  },
+];
