@@ -17,7 +17,7 @@
   width: 30px;
   height: 30px;
   margin: -15px 0 0 -15px;
-  border: 1px solid rgb(102 188 227 / 70%);
+  border: 1px solid var(--color-accent-strong);
   border-radius: 50%;
   transition: width 160ms ease, height 160ms ease, margin 160ms ease, border-color 160ms ease,
     opacity 160ms ease;
@@ -55,6 +55,10 @@
   transform: translate(-50%, -50%);
 }
 
+.blueprint-cursor__reticle[data-visible='true'] {
+  opacity: 0.82;
+}
+
 .blueprint-cursor__trail {
   width: 8px;
   height: 8px;
@@ -63,10 +67,6 @@
   border-radius: 50%;
   box-shadow: 0 0 16px rgb(47 111 143 / 40%);
   transition: opacity 160ms ease;
-}
-
-.blueprint-cursor__reticle[data-visible='true'] {
-  opacity: 0.82;
 }
 
 .blueprint-cursor__trail[data-visible='true'] {

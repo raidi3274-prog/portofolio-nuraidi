@@ -1,19 +1,31 @@
+/* Hallmark · pre-emit critique: P5 H4 E5 S5 R4 V5 · motion: stagger-reveal · tone: technical-austere */
 .scroll-reveal {
   opacity: 0;
-  transform: translateY(26px) scale(0.985);
+  transform: translateY(18px);
   transition:
-    opacity var(--reveal-duration, 620ms) cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
-    transform var(--reveal-duration, 620ms) cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms);
-  will-change: opacity, transform;
+    opacity var(--reveal-duration, var(--duration-reveal)) var(--ease-out) var(--reveal-delay, 0ms),
+    transform var(--reveal-duration, var(--duration-reveal)) var(--ease-out) var(--reveal-delay, 0ms);
 }
 
-.scroll-reveal[data-reveal-direction='horizontal'] {
-  transform: translateX(-28px) scale(0.985);
+.scroll-reveal[data-reveal-direction='left'] {
+  transform: translateX(-20px);
+}
+
+.scroll-reveal[data-reveal-direction='right'] {
+  transform: translateX(20px);
 }
 
 .scroll-reveal.is-visible {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: none;
+}
+
+@media (max-width: 640px) {
+  .scroll-reveal,
+  .scroll-reveal[data-reveal-direction='left'],
+  .scroll-reveal[data-reveal-direction='right'] {
+    transform: translateY(10px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

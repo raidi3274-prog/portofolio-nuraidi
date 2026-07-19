@@ -2,11 +2,12 @@ export const skillGroups = [
   {
     title: 'Keahlian Teknik',
     items: [
-      'Perawatan mesin industri',
-      'Pemeriksaan komponen mekanik',
-      'Dasar sistem kelistrikan',
-      'Pengelasan',
-      'Pemecahan masalah teknis',
+      'Preventive Maintenance',
+      'Mechanical Troubleshooting',
+      'Mechanical Inspection',
+      'Basic Electrical Maintenance',
+      'SMAW Welding',
+      'Lathe Machine Operation',
       'Penerapan K3',
     ],
   },
@@ -15,8 +16,8 @@ export const skillGroups = [
     items: [
       'AutoCAD',
       'Autodesk Inventor',
-      'Microsoft Word',
       'Microsoft Excel',
+      'Microsoft Word',
       'Microsoft PowerPoint',
       'Canva',
     ],

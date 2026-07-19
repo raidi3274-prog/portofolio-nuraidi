@@ -32,6 +32,16 @@ function ProjectDetailPage() {
           <p>{project.description}</p>
         </header>
         <img className="project-detail__image" src={project.image} alt={project.alt} />
+        {project.images?.length ? (
+          <section className="project-detail__gallery" aria-labelledby="project-gallery-title">
+            <h2 id="project-gallery-title">Galeri Proyek</h2>
+            <div className="project-detail__gallery-grid">
+              {project.images.map((image) => (
+                <img key={image.src} src={image.src} alt={image.alt} loading="lazy" />
+              ))}
+            </div>
+          </section>
+        ) : null}
         <div className="project-detail__grid">
           {project.detailDescription ? (
             <article className="project-detail__summary">

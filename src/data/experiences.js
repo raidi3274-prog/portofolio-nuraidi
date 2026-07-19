@@ -3,10 +3,12 @@ export const experiences = [
     company: 'PT Mitra Andalan Sejahtera',
     role: 'Magang Perawatan Mesin Industri',
     description:
-      'Terlibat dalam kegiatan pemeliharaan dan perbaikan mesin pabrik kelapa sawit, inspeksi komponen mekanik, serta pekerjaan pendukung pada sistem kelistrikan industri.',
+      'Melaksanakan tugas pada Departemen Maintenance dengan mendukung kegiatan pemeliharaan mesin produksi, inspeksi peralatan, perbaikan komponen mekanik, serta pemeliharaan sistem kelistrikan industri.',
     contributions: [
       'Berpartisipasi dalam penggantian bearing, screw press, press cage, seal, dan komponen gearbox.',
       'Mendukung pemeriksaan dan pemeliharaan sensor proximity, kontaktor, panel listrik, sistem pneumatik, dan hidrolik.',
+      'Membantu pelaksanaan inspeksi rutin kondisi mesin produksi untuk mengidentifikasi potensi kerusakan dan mendukung tindakan preventive maintenance.',
+      'Melakukan pencatatan penggunaan suku cadang serta membantu penataan dan pengelolaan material di gudang maintenance guna mendukung kelancaran proses perawatan.',
       'Menerapkan prosedur Keselamatan dan Kesehatan Kerja (K3) selama kegiatan pemeliharaan.',
     ],
   },

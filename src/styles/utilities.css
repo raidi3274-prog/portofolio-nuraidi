@@ -4,20 +4,43 @@
 }
 
 .section {
+  position: relative;
   border-top: 1px solid var(--color-border);
-  padding: 34px 0;
+  padding: clamp(52px, 6vw, 82px) 0;
+}
+
+.section::before {
+  position: absolute;
+  top: -1px;
+  left: max(16px, calc((100% - var(--container)) / 2));
+  width: 54px;
+  height: 2px;
+  background: var(--color-warning);
+  content: '';
 }
 
 .section__eyebrow {
-  margin: 0 0 10px;
-  color: #66bce3;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0 0 12px;
+  color: var(--color-accent-bright);
+  font-size: 0.78rem;
   font-weight: 600;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
+.section__eyebrow::before {
+  width: 18px;
+  height: 1px;
+  background: var(--color-warning);
+  content: '';
+}
+
 .section__title {
-  margin: 0 0 18px;
+  max-width: 820px;
+  margin: 0 0 16px;
   font-family: var(--font-heading);
   font-size: clamp(1.45rem, 3vw, 2.15rem);
   line-height: 1.1;
@@ -25,7 +48,7 @@
 
 .section__lead {
   max-width: 760px;
-  margin: 0 0 24px;
+  margin: 0 0 clamp(26px, 4vw, 42px);
   color: var(--color-text-muted);
 }
 
@@ -40,8 +63,8 @@
   align-items: center;
   justify-content: center;
   border: 1px solid var(--color-border);
-  border-radius: 4px;
-  padding: 9px 16px;
+  border-radius: 2px;
+  padding: 9px 17px;
   background: rgb(36 45 51 / 70%);
   color: var(--color-text);
   font-weight: 600;
@@ -51,16 +74,58 @@
     transform var(--transition);
 }
 
-.button:hover {
-  border-color: var(--color-warning);
-  transform: translateY(-1px);
+.button--primary {
+  border-color: var(--color-accent-bright);
+  background: var(--color-accent-bright);
+  color: var(--color-accent-ink);
 }
 
-.button--primary {
-  border-color: #5bb4de;
-  background: linear-gradient(180deg, #347fa2, #285f7a);
+.button,
+.navbar a,
+.footer a {
+  white-space: nowrap;
 }
 
 .button--ghost {
   background: transparent;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:disabled,
+.button[aria-disabled='true'] {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    border-color: var(--color-warning);
+    transform: translateY(-1px);
+  }
+}
+
+.not-found {
+  display: grid;
+  min-height: 60svh;
+  align-items: center;
+}
+
+.not-found .container {
+  max-width: 760px;
+}
+
+.not-found h1 {
+  margin: 0 0 14px;
+  font-family: var(--font-heading);
+  font-size: clamp(2.6rem, 8vw, 5.5rem);
+  line-height: 0.95;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 46px 0;
+  }
 }

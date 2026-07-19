@@ -1,6 +1,6 @@
 .experience__timeline {
   display: grid;
-  gap: 20px;
+  gap: 24px;
   border-left: 2px solid var(--color-border);
   padding-left: 22px;
 }
@@ -8,9 +8,13 @@
 .experience__item {
   position: relative;
   border: 1px solid var(--color-border);
-  border-radius: 6px;
-  padding: 18px;
+  width: 100%;
+  border-radius: 2px;
+  padding: clamp(18px, 3vw, 28px);
   background: var(--color-panel);
+  transition:
+    border-color var(--transition),
+    transform var(--transition);
 }
 
 .experience__item::before {
@@ -27,7 +31,7 @@
 
 .experience__company {
   margin: 0 0 4px;
-  color: #66bce3;
+  color: var(--color-accent-bright);
   font-weight: 600;
 }
 
@@ -43,4 +47,11 @@
 
 .experience__item ul {
   margin-bottom: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .experience__item:hover {
+    border-color: var(--color-accent-strong);
+    transform: translateY(-2px);
+  }
 }

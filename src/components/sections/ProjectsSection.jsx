@@ -13,9 +13,6 @@ function ProjectsSection() {
             title="Penerapan kompetensi teknik dan digital."
             lead="Pilihan proyek yang mencakup otomasi, aplikasi web, administrasi, dan dokumentasi."
           />
-          <a href="#proyek" className="projects__all">
-            Lihat Semua Proyek
-          </a>
         </div>
         <div className="projects__grid">
           {projects.map((project) => (

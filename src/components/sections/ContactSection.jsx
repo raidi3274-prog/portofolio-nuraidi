@@ -87,7 +87,11 @@ function ContactSection() {
             <button className="button button--primary" type="submit">
               Kirim Pesan
             </button>
-            {status ? <p className="contact__status">{status}</p> : null}
+            {status ? (
+              <p className="contact__status" role="status" aria-live="polite">
+                {status}
+              </p>
+            ) : null}
           </form>
         </div>
       </div>

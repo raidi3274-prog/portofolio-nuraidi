@@ -8,19 +8,13 @@
 .projects__grid {
   display: grid;
   gap: 18px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .projects__all {
   flex: 0 0 auto;
-  color: #66bce3;
+  color: var(--color-accent-bright);
   font-weight: 600;
-}
-
-@media (max-width: 980px) {
-  .projects__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 640px) {
@@ -29,6 +23,6 @@
   }
 
   .projects__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 }

@@ -1,13 +1,14 @@
 .contact__grid {
   display: grid;
   gap: 28px;
-  grid-template-columns: minmax(240px, 0.58fr) minmax(0, 1fr);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .contact__info {
   display: grid;
   align-content: start;
   gap: 12px;
+  grid-column: span 5;
 }
 
 .contact__info a {
@@ -15,17 +16,11 @@
   align-items: center;
   gap: 14px;
   border: 1px solid var(--color-border);
-  border-radius: 6px;
+  border-radius: 2px;
   padding: 14px;
   background: var(--color-panel);
   color: var(--color-text-muted);
   transition: border-color var(--transition), color var(--transition), transform var(--transition);
-}
-
-.contact__info a:hover {
-  border-color: var(--color-accent);
-  color: var(--color-text);
-  transform: translateX(4px);
 }
 
 .contact__info a > span:last-child {
@@ -48,10 +43,10 @@
   height: 42px;
   flex: 0 0 42px;
   place-items: center;
-  border: 1px solid rgb(102 188 227 / 34%);
+  border: 1px solid var(--color-accent-line);
   border-radius: 50%;
   background: rgb(47 111 143 / 14%);
-  color: #66bce3;
+  color: var(--color-accent-bright);
 }
 
 .contact__icon svg {
@@ -64,8 +59,9 @@
   display: grid;
   gap: 14px;
   border: 1px solid var(--color-border);
-  border-radius: 6px;
-  padding: 18px;
+  grid-column: span 7;
+  border-radius: 2px;
+  padding: clamp(18px, 3vw, 28px);
   background: var(--color-panel);
 }
 
@@ -82,8 +78,40 @@
   border: 1px solid var(--color-border);
   border-radius: 4px;
   padding: 12px 14px;
-  background: rgb(18 22 25 / 70%);
+  background: var(--color-field);
   color: var(--color-text);
+  outline: 2px solid transparent;
+  outline-offset: 1px;
+}
+
+.contact__form input:hover,
+.contact__form textarea:hover {
+  border-color: var(--color-accent-line);
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  border-color: var(--color-accent-bright);
+  outline-color: var(--color-warning);
+}
+
+.contact__form input:disabled,
+.contact__form textarea:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.contact__form textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .contact__info a:hover {
+    border-color: var(--color-accent);
+    color: var(--color-text);
+    transform: translateX(4px);
+  }
 }
 
 .contact__status {
@@ -93,6 +121,11 @@
 
 @media (max-width: 780px) {
   .contact__grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact__info,
+  .contact__form {
+    grid-column: auto;
   }
 }

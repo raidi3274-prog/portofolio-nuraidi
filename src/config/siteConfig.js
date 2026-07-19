@@ -5,7 +5,7 @@ const encodedWhatsappMessage = encodeURIComponent(
 export const siteConfig = {
   name: 'Portofolio Nuraidi',
   ownerName: 'Nuraidi',
-  role: 'Teknik Mesin Pertanian dan Maintenance Industri',
+  role: 'Teknik Mesin Pertanian',
   description:
     'Lulusan D4 Teknik Mesin Pertanian dengan pengalaman dalam perawatan mesin industri, pemeriksaan komponen mekanik, kelistrikan dasar, serta pengembangan solusi digital pendukung operasional.',
   location: 'Sambas, Kalimantan Barat',
@@ -16,5 +16,5 @@ export const siteConfig = {
   linkedinUrl: 'https://www.linkedin.com/in/nuraidi',
   githubUrl: 'https://github.com/',
   cvPath: '/documents/cv-nuraidi.pdf',
-  seoTitle: 'Nuraidi | Teknik Mesin dan Maintenance Industri',
+  seoTitle: 'Nuraidi | Teknik Mesin Pertanian',
 };

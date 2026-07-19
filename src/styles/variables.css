@@ -1,3 +1,4 @@
+/* Hallmark · pre-emit critique: P5 H5 E4 S5 R4 V5 · genre: editorial · macrostructure: Workbench (asymmetric evidence modules) · tone: technical-austere · anchor hue: steel-blue · design-system: design.md · contrast: pass (40–41) · nav: N6 · footer: Ft4 · slop: pass (42–45) · mobile: pass (34, 49–57) */
 :root {
   --color-bg: #121619;
   --color-bg-secondary: #1b2227;
@@ -9,12 +10,38 @@
   --color-border: #344149;
   --color-line-soft: rgb(169 177 183 / 7%);
   --color-panel: rgb(27 34 39 / 88%);
+  --color-panel-solid: #1b2227;
+  --color-surface-deep: #091014;
+  --color-accent-bright: #66bce3;
+  --color-accent-soft: rgb(102 188 227 / 14%);
+  --color-accent-line: rgb(102 188 227 / 34%);
+  --color-accent-strong: rgb(102 188 227 / 70%);
+  --color-warning-soft: rgb(217 119 45 / 14%);
+  --color-grid: rgb(255 255 255 / 2%);
+  --color-field: rgb(18 22 25 / 70%);
+  --color-overlay: rgb(9 16 20 / 88%);
+  --color-accent-ink: #071218;
 
   --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
   --font-body: 'IBM Plex Sans', system-ui, sans-serif;
 
   --container: 1240px;
-  --radius: 8px;
+  --space-1: 6px;
+  --space-2: 10px;
+  --space-3: 14px;
+  --space-4: 18px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+  --radius: 4px;
   --shadow-soft: 0 24px 70px rgb(0 0 0 / 38%);
-  --transition: 180ms ease;
+  --duration-fast: 160ms;
+  --duration-base: 220ms;
+  --duration-reveal: 680ms;
+  --ease-standard: ease;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --transition: var(--duration-base) var(--ease-standard);
+  --z-navbar: 20;
+  --z-cursor: 10;
 }

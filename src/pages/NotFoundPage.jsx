@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function NotFoundPage() {
   return (
-    <section className="section">
+    <section className="section not-found">
       <div className="container">
         <p className="section__eyebrow">404</p>
         <h1>Halaman tidak ditemukan</h1>
