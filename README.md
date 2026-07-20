@@ -1,20 +1,67 @@
 # Portofolio Nuraidi
 
-Fondasi website personal portfolio Nuraidi berbasis React, Vite, JavaScript, JSX, dan CSS.
+Website portofolio personal Nuraidi, lulusan D4 Teknik Mesin Pertanian. Website ini menampilkan profil profesional, pengalaman, keahlian, sertifikat, dan proyek teknik maupun digital.
 
-## Instalasi
+## Fitur
 
-```bash
-npm install
-```
+- Halaman utama responsif dengan bagian profil, pengalaman, proyek, keahlian, sertifikat, dan kontak
+- Halaman detail dan galeri untuk setiap proyek
+- Navigasi desktop dan mobile
+- Animasi saat elemen masuk ke viewport dengan dukungan `prefers-reduced-motion`
+- Unduh CV langsung dari website
+- Tautan kontak melalui email, WhatsApp, dan LinkedIn
+- Halaman 404 serta metadata SEO, `sitemap.xml`, dan `robots.txt`
 
-Pada PowerShell Windows, gunakan `npm.cmd install` jika `npm.ps1` diblokir Execution Policy.
+## Teknologi
+
+- React 19
+- React Router 7
+- Vite 7
+- JavaScript, JSX, dan CSS
+- ESLint dan Prettier
 
 ## Menjalankan Proyek
 
+Pastikan Node.js versi 20 atau lebih baru telah terpasang.
+
 ```bash
+npm install
 npm run dev
 ```
+
+Perintah lain yang tersedia:
+
+```bash
+npm run build    # membuat build production
+npm run preview  # melihat build production secara lokal
+npm run lint     # memeriksa kualitas kode
+npm run format   # memformat kode
+```
+
+Pada PowerShell Windows, gunakan `npm.cmd` jika eksekusi `npm.ps1` diblokir oleh Execution Policy.
+
+## Mengelola Konten
+
+Konten utama dipisahkan dari komponen agar mudah diperbarui:
+
+- Identitas dan kontak: `src/config/siteConfig.js`
+- Navigasi: `src/data/navigation.js`
+- Pengalaman: `src/data/experiences.js`
+- Proyek dan galeri: `src/data/projects.js`
+- Keahlian: `src/data/skills.js`
+- Sertifikat: `src/data/certificates.js`
+- Tautan sosial: `src/data/socialLinks.js`
+
+Aset publik tersimpan di:
+
+- Foto profil: `public/images/profile/`
+- Gambar proyek: `public/images/projects/`
+- Gambar sertifikat: `public/images/certificates/`
+- CV: `public/documents/cv-nuraidi.pdf`
+
+## Catatan Formulir Kontak
+
+Formulir kontak saat ini belum terhubung ke layanan pengiriman. Pengunjung diarahkan untuk menghubungi Nuraidi melalui email, WhatsApp, atau LinkedIn.
 
 ## Build Production
 
@@ -22,32 +69,4 @@ npm run dev
 npm run build
 ```
 
-## Lint
-
-```bash
-npm run lint
-```
-
-## Struktur Konten
-
-- Identitas website: `src/config/siteConfig.js`
-- Navigasi: `src/data/navigation.js`
-- Pengalaman: `src/data/experiences.js`
-- Proyek: `src/data/projects.js`
-- Keahlian: `src/data/skills.js`
-- Sertifikat: `src/data/certificates.js`
-- Tautan sosial: `src/data/socialLinks.js`
-
-## Mengganti Placeholder
-
-- Foto profil: ganti placeholder di `HeroSection.jsx` dengan gambar lokal di `src/assets/images/`.
-- CV: ganti `src/assets/documents/CV_Nuraidi.pdf`.
-- Gambar proyek dan sertifikat: simpan aset baru di `src/assets/images/`, lalu hubungkan dari data terkait.
-
-## Formulir Kontak
-
-Fondasi formulir masih memakai simulasi lokal. Kunci layanan mendatang disiapkan di `.env.example`.
-
-## Deploy
-
-Proyek disiapkan untuk Vercel, tetapi belum dihubungkan ke GitHub atau Vercel pada tahap fondasi ini.
+Hasil build tersedia di folder `dist/` dan dapat di-deploy ke layanan hosting statis seperti Vercel, Netlify, atau GitHub Pages.
