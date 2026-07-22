@@ -1,10 +1,14 @@
+/* Hallmark · component: software marquee · genre: industrial editorial · theme: existing portfolio */
+
 .hero {
   position: relative;
   overflow: hidden;
   padding: clamp(38px, 5vw, 60px) 0 clamp(52px, 6.5vw, 78px);
   background:
-    linear-gradient(90deg, rgb(18 22 25 / 98%) 0%, rgb(18 22 25 / 86%) 46%, transparent 100%),
-    linear-gradient(145deg, transparent 0%, rgb(47 111 143 / 16%) 72%, transparent 100%);
+    linear-gradient(90deg, rgb(12 17 20 / 90%) 0%, rgb(12 17 20 / 78%) 48%, rgb(12 17 20 / 58%) 100%),
+    linear-gradient(180deg, rgb(7 13 17 / 42%), rgb(7 13 17 / 66%)),
+    linear-gradient(145deg, transparent 0%, rgb(47 111 143 / 12%) 72%, transparent 100%),
+    url('/images/backgrounds/background%20dasboard.webp') center / cover no-repeat;
 }
 
 .hero::after {
@@ -370,6 +374,93 @@
   animation: hero-label-reveal 500ms ease-out 1160ms both;
 }
 
+.software-marquee {
+  position: relative;
+  overflow: hidden;
+  margin-top: 28px;
+  margin-bottom: -34px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-panel);
+  mask-image: linear-gradient(to right, transparent, var(--color-text) 5%, var(--color-text) 95%, transparent);
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    var(--color-text) 5%,
+    var(--color-text) 95%,
+    transparent
+  );
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.software-marquee.is-dragging {
+  cursor: grabbing;
+}
+
+.software-marquee img {
+  pointer-events: none;
+}
+
+.software-marquee__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: software-marquee-scroll 34s linear infinite;
+}
+
+.software-marquee__group {
+  display: flex;
+  align-items: center;
+  gap: 44px;
+  margin: 0;
+  padding: 14px 44px 14px 0;
+  list-style: none;
+}
+
+.software-marquee__item {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text-muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.software-marquee__logo {
+  display: grid;
+  width: 40px;
+  height: 34px;
+  flex: 0 0 40px;
+  overflow: hidden;
+  place-items: center;
+}
+
+.software-marquee__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(var(--logo-scale, 1));
+  transform-origin: center;
+}
+
+.software-marquee__item[data-software='GitHub'] img {
+  filter: invert(72%);
+}
+
+@keyframes software-marquee-scroll {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
 @media (max-width: 860px) {
   .hero__inner {
     min-height: auto;
@@ -379,6 +470,14 @@
   .hero {
     padding-top: 28px;
     padding-bottom: 42px;
+    background:
+      linear-gradient(180deg, rgb(12 17 20 / 72%), rgb(12 17 20 / 66%)),
+      linear-gradient(145deg, transparent 0%, rgb(47 111 143 / 10%) 72%, transparent 100%),
+      url('/images/backgrounds/background%20dasboard.webp') 58% center / cover no-repeat;
+  }
+
+  .software-marquee {
+    margin-bottom: -42px;
   }
 
   .hero__media {
@@ -415,6 +514,17 @@
   .hero__actions .button {
     width: 100%;
   }
+
+  .software-marquee__group {
+    gap: 30px;
+    padding-right: 30px;
+  }
+
+  .software-marquee__logo {
+    width: 36px;
+    height: 30px;
+    flex-basis: 36px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -445,5 +555,26 @@
   .hero__portrait img {
     transform: none;
     transition: none;
+  }
+
+  .software-marquee {
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+
+  .software-marquee__track {
+    width: 100%;
+    transform: none;
+    animation: none;
+  }
+
+  .software-marquee__group {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-inline: 16px;
+  }
+
+  .software-marquee__group[aria-hidden='true'] {
+    display: none;
   }
 }

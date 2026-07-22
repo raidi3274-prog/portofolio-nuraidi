@@ -8,7 +8,8 @@
   display: grid;
   align-content: start;
   gap: 12px;
-  grid-column: span 5;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .contact__info a {
@@ -39,71 +40,24 @@
 
 .contact__icon {
   display: grid;
-  width: 42px;
-  height: 42px;
-  flex: 0 0 42px;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 34px;
   place-items: center;
-  border: 1px solid var(--color-accent-line);
-  border-radius: 50%;
-  background: rgb(47 111 143 / 14%);
-  color: var(--color-accent-bright);
 }
 
-.contact__icon svg {
-  width: 21px;
-  height: 21px;
-  stroke-width: 1.7;
+.contact__icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
-.contact__form {
-  display: grid;
-  gap: 14px;
-  border: 1px solid var(--color-border);
-  grid-column: span 7;
-  border-radius: 2px;
-  padding: clamp(18px, 3vw, 28px);
-  background: var(--color-panel);
+.contact__icon--email img {
+  transform: scale(1.9);
 }
 
-.contact__form label {
-  display: grid;
-  gap: 6px;
-  color: var(--color-text-muted);
-  font-weight: 600;
-}
-
-.contact__form input,
-.contact__form textarea {
-  width: 100%;
-  border: 1px solid var(--color-border);
-  border-radius: 4px;
-  padding: 12px 14px;
-  background: var(--color-field);
-  color: var(--color-text);
-  outline: 2px solid transparent;
-  outline-offset: 1px;
-}
-
-.contact__form input:hover,
-.contact__form textarea:hover {
-  border-color: var(--color-accent-line);
-}
-
-.contact__form input:focus,
-.contact__form textarea:focus {
-  border-color: var(--color-accent-bright);
-  outline-color: var(--color-warning);
-}
-
-.contact__form input:disabled,
-.contact__form textarea:disabled {
-  cursor: not-allowed;
-  opacity: 0.55;
-}
-
-.contact__form textarea {
-  min-height: 8rem;
-  resize: vertical;
+.contact__icon--linkedin img {
+  transform: scale(1.12);
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -114,18 +68,13 @@
   }
 }
 
-.contact__status {
-  margin: 0;
-  color: var(--color-warning);
-}
-
 @media (max-width: 780px) {
   .contact__grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .contact__info,
-  .contact__form {
+  .contact__info {
     grid-column: auto;
+    grid-template-columns: minmax(0, 1fr);
   }
 }
