@@ -5,8 +5,8 @@
   overflow: hidden;
   padding: clamp(38px, 5vw, 60px) 0 clamp(52px, 6.5vw, 78px);
   background:
-    linear-gradient(90deg, rgb(12 17 20 / 90%) 0%, rgb(12 17 20 / 78%) 48%, rgb(12 17 20 / 58%) 100%),
-    linear-gradient(180deg, rgb(7 13 17 / 42%), rgb(7 13 17 / 66%)),
+    linear-gradient(90deg, rgb(12 17 20 / 94%) 0%, rgb(12 17 20 / 84%) 48%, rgb(12 17 20 / 65%) 100%),
+    linear-gradient(180deg, rgb(7 13 17 / 50%), rgb(7 13 17 / 74%)),
     linear-gradient(145deg, transparent 0%, rgb(47 111 143 / 12%) 72%, transparent 100%),
     url('/images/backgrounds/background%20dasboard.webp') center / cover no-repeat;
 }
@@ -471,7 +471,7 @@
     padding-top: 28px;
     padding-bottom: 42px;
     background:
-      linear-gradient(180deg, rgb(12 17 20 / 72%), rgb(12 17 20 / 66%)),
+      linear-gradient(180deg, rgb(12 17 20 / 80%), rgb(12 17 20 / 74%)),
       linear-gradient(145deg, transparent 0%, rgb(47 111 143 / 10%) 72%, transparent 100%),
       url('/images/backgrounds/background%20dasboard.webp') 58% center / cover no-repeat;
   }
