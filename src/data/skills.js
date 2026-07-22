@@ -16,6 +16,7 @@ export const skillGroups = [
     items: [
       'AutoCAD',
       'Autodesk Inventor',
+      'Arduino',
       'Microsoft Excel',
       'Microsoft Word',
       'Microsoft PowerPoint',

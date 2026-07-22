@@ -9,9 +9,49 @@
   padding-right: clamp(0px, 2vw, 24px);
 }
 
-.about__copy p {
+.about__typewriter {
+  position: relative;
+}
+
+.about__typewriter p {
   margin: 0 0 18px;
   color: var(--color-text-muted);
+}
+
+.about__typewriter-space {
+  visibility: hidden;
+}
+
+.about__typewriter-text {
+  position: absolute;
+  inset: 0;
+}
+
+.about__typewriter-text.is-typing::after {
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  margin-left: 2px;
+  background: var(--color-accent-bright);
+  content: '';
+  vertical-align: -0.12em;
+  animation: about-caret 500ms steps(1, end) infinite;
+}
+
+.about__copy-accessible {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@keyframes about-caret {
+  50% {
+    opacity: 0;
+  }
 }
 
 .about__facts {
